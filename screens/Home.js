@@ -8,6 +8,7 @@ const Home = () => {
     <View style={styles.container}>
       <Button title="use query" onPress={() => history.push("/query")} />
       <Button title="use mutation" onPress={() => history.push("/mutation")} />
+      <Button title="custom hook" onPress={() => history.push("/custom")} />
     </View>
   );
 };

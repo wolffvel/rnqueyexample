@@ -1,15 +1,15 @@
 import React from "react";
-import { SafeAreaView, Button, StyleSheet } from "react-native";
+import { View, Button, StyleSheet, Text } from "react-native";
 import { useHistory } from "react-router-native";
-import PostList from "../containers/PostList";
+import CommentList from "../containers/CommentList";
 
-const Query = () => {
+const CustomHook = () => {
   const history = useHistory();
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Button title="back" onPress={() => history.push("/")} />
-      <PostList />
-    </SafeAreaView>
+      <CommentList />
+    </View>
   );
 };
 
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Query;
+export default CustomHook;
